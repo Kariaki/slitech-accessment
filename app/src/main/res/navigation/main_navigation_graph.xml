@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation_graph"
+    app:startDestination="@id/competitionsFragment">
+
+    <fragment
+        android:id="@+id/competitionsFragment"
+        android:name="com.thirdwinter.slitechassessment.ui.navigations.CompetitionsFragment"
+        android:label="Competitions">
+
+        <action
+            android:id="@+id/action_competitionsFragment_to_competitionTeams"
+            app:destination="@id/competitionTeams" />
+    </fragment>
+    <fragment
+        android:id="@+id/competitionTeams"
+        android:name="com.thirdwinter.slitechassessment.ui.navigations.CompetitionTeams"
+        android:label="{label}">
+        <action
+            android:id="@+id/action_competitionTeams_to_teamFragment"
+            app:destination="@id/teamFragment" />
+        <argument
+            android:name="competitionId"
+            app:argType="integer" />
+        <argument
+            android:name="label"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/teamFragment"
+        android:name="com.thirdwinter.slitechassessment.ui.navigations.TeamFragment"
+        android:label="{teamName}"
+        tools:layout="@layout/fragment_team">
+        <argument
+            android:name="teamId"
+            app:argType="integer" />
+        <argument
+            android:name="teamName"
+            app:argType="string" />
+        <argument
+            android:name="team"
+            app:argType="com.thirdwinter.slitechassessment.db.architecture.model.Team" />
+    </fragment>
+</navigation>

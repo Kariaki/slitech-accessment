@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="app/src/main/res/drawable/country_background.xml" value="0.2025" />
+        <entry key="app/src/main/res/layout/activity_competition.xml" value="0.2384406165004533" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/competition_component.xml" value="0.242520398912058" />
+        <entry key="app/src/main/res/layout/competition_match_component.xml" value="0.2911500641299701" />
+        <entry key="app/src/main/res/layout/competition_standing_component.xml" value="0.14229001253656498" />
+        <entry key="app/src/main/res/layout/competition_team_component.xml" value="0.2911500641299701" />
+        <entry key="app/src/main/res/layout/content_competition.xml" value="0.1483539974348012" />
+        <entry key="app/src/main/res/layout/fragment_competition_base.xml" value="0.29157759726378796" />
+        <entry key="app/src/main/res/layout/fragment_competition_matches.xml" value="0.2911500641299701" />
+        <entry key="app/src/main/res/layout/fragment_competition_scorers.xml" value="0.14229001253656498" />
+        <entry key="app/src/main/res/layout/fragment_competition_standings.xml" value="0.2783240701154339" />
+        <entry key="app/src/main/res/layout/fragment_competition_teams.xml" value="0.2911500641299701" />
+        <entry key="app/src/main/res/layout/fragment_competitions.xml" value="0.35520833333333335" />
+        <entry key="app/src/main/res/layout/fragment_team.xml" value="0.17274569402228976" />
+        <entry key="app/src/main/res/layout/fragment_team_squad_modal.xml" value="0.14229001253656498" />
+        <entry key="app/src/main/res/layout/fragment_todays_match.xml" value="0.29157759726378796" />
+        <entry key="app/src/main/res/layout/match_component.xml" value="0.29157759726378796" />
+        <entry key="app/src/main/res/layout/scorer_component.xml" value="0.27651858567543064" />
+        <entry key="app/src/main/res/layout/team_squad_component.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/todays_match_component.xml" value="0.29157759726378796" />
+        <entry key="app/src/main/res/menu/main_menu.xml" value="0.2911500641299701" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

@@ -1,0 +1,199 @@
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.thirdwinter.slitechassessment.ui.navigations.TeamFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/teamCrest"
+            android:layout_width="250dp"
+            android:scaleType="center"
+            android:src="@drawable/team_place_holder"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="250dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:text="Club Details"
+            android:textSize="18sp"
+            android:textStyle="bold"
+
+            />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            app:cardCornerRadius="10dp"
+          >
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:id="@+id/loader"
+                />
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_margin="10dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="0"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_column="0"
+                    android:text="Founded:" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="1"
+                    android:layout_column="0"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"
+                    android:text="NickName:" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="2"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_column="0"
+                    android:layout_marginTop="10dp"
+                    android:text="Address:" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="3"
+                    android:layout_column="0"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"
+                    android:text="Phone number:" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="4"
+                    android:layout_column="0"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"
+                    android:text="Website:" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="5"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_column="0"
+                    android:layout_marginTop="10dp"
+                    android:text="Email:" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="0"
+                    android:layout_column="1"
+                    android:id="@+id/founded"
+                    android:textSize="16sp"
+                    android:layout_marginStart="20dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="1"
+                    android:id="@+id/nickname"
+                    android:textSize="16sp"
+                    android:layout_column="1"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                     />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="2"
+                    android:layout_column="1"
+                    android:id="@+id/address"
+                    android:textSize="16sp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                   />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="3"
+                    android:id="@+id/phone"
+                    android:textSize="16sp"
+                    android:layout_column="1"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                     />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="4"
+                    android:layout_column="1"
+                    android:layout_marginStart="20dp"
+                    android:textSize="16sp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/website"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/email"
+                    android:layout_row="5"
+                    android:textSize="16sp"
+                    android:layout_column="1"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                   />
+
+
+            </GridLayout>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="Team Players"
+            android:textSize="18sp"
+            android:textStyle="bold"
+
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/teamRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp" />
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

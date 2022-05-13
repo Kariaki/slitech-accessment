@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+   android:padding="15dp"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="10dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="15dp"
+            android:id="@+id/nameHolder"
+            android:layout_marginStart="10dp"
+            app:cardBackgroundColor="#D1D1D1"
+            app:cardCornerRadius="100dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="KE"
+                android:id="@+id/profileNameView"
+                android:layout_gravity="center"
+                android:textSize="14sp"
+                />
+        </androidx.cardview.widget.CardView>
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_alignTop="@id/nameHolder"
+            android:layout_toEndOf="@+id/nameHolder"
+            android:layout_marginEnd="10dp"
+            android:text="Manchester united"
+
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/position"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name"
+            android:layout_marginBottom="5dp"
+            android:layout_alignStart="@+id/name"
+            android:layout_marginTop="10dp"
+            android:text="Goal keeper" />
+
+        <TextView
+            android:id="@+id/country"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/name"
+            android:layout_marginEnd="10dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:textStyle="bold"
+
+            android:textColor="@color/teal_200"
+
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/country_background"
+            android:text="Country" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_alignTop="@id/position"
+            android:id="@+id/dateOfbirth"
+            android:layout_alignEnd="@id/country"
+            android:text="Date of Birth" />
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>
